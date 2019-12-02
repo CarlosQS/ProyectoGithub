@@ -13,13 +13,19 @@ public class ProyectoGithub {
         
     }
     
-    static String veredicto(String valor1, String valor2) {
+    private static String veredicto(String valor1, String valor2) {
+        /**
+         * Si el primer valor es igual al segundo
+         */
         if (valor1.equals(valor2)) {
-            return "Perfecto. Has tenido buen criterio.";
+            return "Perfecto. Has tenido buen criterio.";  //Da como resultado
         }
+        /**
+         * En cambio si el primer valor es menor que el segundo
+         */
         if (Integer.valueOf(valor1) < Integer.valueOf(valor2)){
-            return "Has mejorado, o te ha llegado el éxito inesperado.";
+            return "Has mejorado, o te ha llegado el éxito inesperado.";   //Da como resultado
         }
-        return "Te has confiado. Falta realismo.";
+        return "Te has confiado. Falta realismo.";    //Termina con un return String
     }
 }
